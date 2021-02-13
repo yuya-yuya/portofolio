@@ -38,6 +38,7 @@ h2{
   margin-bottom: 50px;
 }
 
+
 #case1js{
   width: 175px;
   height: 50px;
@@ -50,6 +51,20 @@ h2{
 }
 
 .case1des{
+  width: 750px;
+  height: 500px;
+  margin: 0 auto;
+  border: 3px solid black;
+  border-radius: 0px 0px 20px 20px;
+  font-size: large;
+  margin-bottom: 50px;
+  position: relative;
+  top: -80px;
+  border-top: none;
+  display: none;
+}
+
+.CASE1add{
   width: 750px;
   height: 350px;
   margin: 0 auto;
@@ -80,6 +95,17 @@ h2{
   background-color:#4169e1;
 }
 
+.case2des{
+  width: 750px;
+  height: 350px;
+  margin: 0 auto;
+  border: 3px solid black;
+  border-radius: 20px;
+  font-size: large;
+  margin-bottom: 50px;
+  display: none;
+}
+
 .CASE3{
   width: 750px;
   height: 350px;
@@ -99,6 +125,17 @@ h2{
   border: 3px solid black;
   border-radius: 20px;
   background-color:#4169e1;
+}
+
+.case3des{
+  width: 750px;
+  height: 350px;
+  margin: 0 auto;
+  border: 3px solid black;
+  border-radius: 20px;
+  font-size: large;
+  margin-bottom: 50px;
+  display: none;
 }
 
 .CASE4{
@@ -122,6 +159,17 @@ h2{
   background-color:#4169e1;
 }
 
+.case4des{
+  width: 750px;
+  height: 350px;
+  margin: 0 auto;
+  border: 3px solid black;
+  border-radius: 20px;
+  font-size: large;
+  margin-bottom: 50px;
+  display: none;
+}
+
 
 .CASE5{
   width: 750px;
@@ -142,6 +190,17 @@ h2{
   border: 3px solid black;
   border-radius: 20px;
   background-color:#4169e1;
+}
+
+.case5des{
+  width: 750px;
+  height: 350px;
+  margin: 0 auto;
+  border: 3px solid black;
+  border-radius: 20px;
+  font-size: large;
+  margin-bottom: 50px;
+  display: none;
 }
  /* case-sec共通部分 */
 .left{
