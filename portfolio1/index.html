@@ -1,0 +1,567 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    *{
+  margin: 0;
+  padding: 0;
+}
+
+clearfix::after { 
+  content: '';
+  display: block; 
+  clear: both;
+}
+
+/* case-sec開始 */
+h2{
+  text-align: center;
+  height: 70px;
+  line-height: 70px;
+}
+
+.titleborder{
+  color: black;
+  border-bottom: 1px solid black;
+}
+
+.subtitle{
+  text-align: center;
+  font-size: smaller;
+  height: 70px;
+  line-height: 70px;
+}
+
+.CASE1{
+  width: 750px;
+  height: 350px;
+  margin: 0 auto;
+  border: 3px solid black;
+  border-radius: 20px;
+  font-size: large;
+  margin-bottom: 50px;
+}
+
+
+#case1js{
+  width: 175px;
+  height: 50px;
+  position: relative;
+  top: -30px;
+  left: 500px;
+  border: 3px solid black;
+  border-radius: 20px;
+  background-color:#4169e1;
+}
+
+.case1des{
+  width: 750px;
+  height: 500px;
+  margin: 0 auto;
+  border: 3px solid black;
+  border-radius: 0px 0px 20px 20px;
+  font-size: large;
+  margin-bottom: 50px;
+  position: relative;
+  top: -80px;
+  border-top: none;
+  display: none;
+}
+
+.CASE1add{
+  width: 750px;
+  height: 350px;
+  margin: 0 auto;
+  border: 3px solid black;
+  border-radius: 20px;
+  font-size: large;
+  margin-bottom: 50px;
+}
+
+.CASE2{
+  width: 750px;
+  height: 350px;
+  margin: 0 auto;
+  border: 3px solid black;
+  border-radius: 20px;
+  font-size: large;
+  margin-bottom: 50px;
+}
+
+#case2js{
+  width: 175px;
+  height: 50px;
+  position: relative;
+  top: -30px;
+  left: 500px;
+  border: 3px solid black;
+  border-radius: 20px;
+  background-color:#4169e1;
+}
+
+.case2des{
+  width: 750px;
+  height: 350px;
+  margin: 0 auto;
+  border: 3px solid black;
+  border-radius: 20px;
+  font-size: large;
+  margin-bottom: 50px;
+  display: none;
+}
+
+.CASE3{
+  width: 750px;
+  height: 350px;
+  margin: 0 auto;
+  border: 3px solid black;
+  border-radius: 20px;
+  font-size: large;
+  margin-bottom: 50px;
+}
+
+#case3js{
+  width: 175px;
+  height: 50px;
+  position: relative;
+  top: -30px;
+  left: 500px;
+  border: 3px solid black;
+  border-radius: 20px;
+  background-color:#4169e1;
+}
+
+.case3des{
+  width: 750px;
+  height: 350px;
+  margin: 0 auto;
+  border: 3px solid black;
+  border-radius: 20px;
+  font-size: large;
+  margin-bottom: 50px;
+  display: none;
+}
+
+.CASE4{
+  width: 750px;
+  height: 350px;
+  margin: 0 auto;
+  border: 3px solid black;
+  border-radius: 20px;
+  font-size: large;
+  margin-bottom: 50px;
+}
+
+#case4js{
+  width: 175px;
+  height: 50px;
+  position: relative;
+  top: -30px;
+  left: 500px;
+  border: 3px solid black;
+  border-radius: 20px;
+  background-color:#4169e1;
+}
+
+.case4des{
+  width: 750px;
+  height: 350px;
+  margin: 0 auto;
+  border: 3px solid black;
+  border-radius: 20px;
+  font-size: large;
+  margin-bottom: 50px;
+  display: none;
+}
+
+
+.CASE5{
+  width: 750px;
+  height: 350px;
+  margin: 0 auto;
+  border: 3px solid black;
+  border-radius: 20px;
+  font-size: large;
+  margin-bottom: 50px;
+}
+
+#case5js{
+  width: 175px;
+  height: 50px;
+  position: relative;
+  top: -30px;
+  left: 500px;
+  border: 3px solid black;
+  border-radius: 20px;
+  background-color:#4169e1;
+}
+
+.case5des{
+  width: 750px;
+  height: 350px;
+  margin: 0 auto;
+  border: 3px solid black;
+  border-radius: 20px;
+  font-size: large;
+  margin-bottom: 50px;
+  display: none;
+}
+ /* case-sec共通部分 */
+.left{
+  float: left;
+  width: 400px;
+  height: 249px;
+  border-bottom: 1px dashed black;
+}
+
+.right{
+  float: right;
+  width: 350px;
+  height: 250px;
+  text-align: center;
+  position: relative;
+  top: 25px;
+}
+
+.left-left{
+  float: left;
+  width: 260px;
+  height: 250px;
+  padding: 20px;
+}
+
+.left-right{
+  float: right;
+  width: 100px;
+  height: 250px;
+  position: relative;
+  top: 50px;
+}
+
+.bottom{
+  text-align: center;
+  line-height: 100px;
+  font-size: x-large;
+}
+
+.addcase{
+  width: 70px;
+  height: 25px;
+  background-color: yellow;
+  text-align: center;
+  line-height: 25px;
+  font-size: smaller;
+}
+
+span{
+  color: red;
+  font-size: larger;
+  border-bottom: 1px solid red;
+}
+/* case-sec共通部分終了 */
+/* case-sec 終了 */
+
+/* sec9開始 */
+.sec9header{
+  height: 200px;
+}
+
+/* 上のくくり */
+.sec9mainupper{
+  background-color: #EEEEEE;
+  height: 300px;
+  display: flex;
+  justify-content: center;
+}
+
+#sec9mainupperleft{
+  height: 300px;
+}
+
+#sec9mainupperleftfont{
+  font-size: x-large;
+  letter-spacing: 1px;
+  position: relative;
+  bottom: 0px;
+}
+
+#sec9mainupperleftfontcolor{
+  color: red;
+}
+
+.sec9headerupperright{
+  position: relative;
+  height: 300px;
+  left: 100px;
+  bottom: 100px;
+}
+
+/* 下のくくり */
+.sec9mainunder{
+  background-color: #EEEEEE;
+  height: 800px;
+  display: flex;
+  justify-content: center;
+}
+
+#sec9mainunderleft{
+  padding-right: 20px;
+}
+
+#sec9mainunderright{
+  padding-left: 20px;
+}
+
+#sec9mainunderleftbox{
+  width: 380px;
+  height: 270px;
+  background-color:white;
+  padding: 20px;
+}
+
+#sec9mainunderrightbox{
+  width: 380px;
+  height: 220px;
+  background-color:white;
+  padding: 20px;
+}
+
+#sec9mainunderrightfont{
+  width: 380px;
+  padding: 20px;
+}
+
+.sec9titlefont1{
+  width: 180px;
+  height: 35px;
+  background-color: #EEEEEE;
+  text-align: center;
+  line-height: 35px;
+  border-radius: 40px;
+  margin-bottom: 20px;
+}
+
+.sec9titlefont2{
+  width: 100px;
+  height: 35px;
+  background-color: #EEEEEE;
+  text-align: center;
+  line-height: 35px;
+  border-radius: 40px;
+  margin-bottom: 20px;
+}
+
+.sec9titelfontsize{
+  margin-bottom: 20px;
+}
+
+
+  </style>
+</head>
+<body>
+
+  <section id="case-sec">
+    <h2><span class="titleborder">弁護士法人サリュの最新解決事例</span></h2>
+    <p class="subtitle">弁護士法人サリュの最新解決事例をご紹介いたします。</p>
+    <div class="CASE1 CASE1add clearfix">
+      <div class="left clearfix">
+        <div class="left-left">
+          <div class="addcase">
+            <i>CASE1</i>
+          </div>
+          <p><b>
+            営業社員に対する<br>
+            固定残業代の支払いの有効性、<br>
+            店長の管理監督者性が<br>
+            問題になった事例について
+          </p></b>
+        </div>
+        <div class="left-right">
+          <img src="case-sec-ic1.png" alt="参考画像" width="100px" heigth="150px">
+        </div>
+      </div>
+      <div class="right">
+        <img src="case-sec-pic1.jpg" alt="参考画像" width="250px" heigth="200px">
+      </div>
+      <div class="bottom"><b>
+        <p>0円 → 訴訟により<span>550万円以上</span>の回収！</p>
+      </div></b>
+      <div id="case1js">
+        <p>▼詳しくはこちら</p>
+      </div>
+    </div>
+    <div id="case1desc" class="case1des">
+      
+    </div>
+    <div class="CASE2 clearfix">
+      <div class="left clearfix">
+        <div class="left-left">
+          <div class="addcase">
+            <i>CASE2</i>
+          </div>
+          <p><b>
+            運送業のトラック運転手の労働<br>
+            時間及び労働者性が問題になっ<br>
+            た事例について
+          </p></b>
+        </div>
+        <div class="left-right">
+          <img src="case-sec-ic2.png" alt="参考画像" width="100px" heigth="150px">
+        </div>
+      </div>
+      <div class="right">
+        <img src="case-sec-pic2.jpg" alt="参考画像" width="250px" heigth="200px">
+      </div>
+      <div class="bottom"><b>
+        <p>0円 → 訴訟により<span>280万円以上</span>の回収！</p>
+      </div></b>
+      <div id="case2js">
+        <p></p>
+      </div>
+    </div>
+    <div class="case2des">
+      dad
+    </div>
+    <div class="CASE3 clearfix">
+      <div class="left clearfix">
+        <div class="left-left">
+          <div class="addcase">
+            <i>CASE3</i>
+          </div>
+          <p><b>
+            休憩時間と労働時間の区別及び<br>
+            始業前の労働時間性が問題にな<br>
+            った事例について
+          </p></b>
+        </div>
+        <div class="left-right">
+          <img src="case-sec-ic3.png" alt="参考画像" width="100px" heigth="150px">
+        </div>
+      </div>
+      <div class="right">
+        <img src="case-sec-pic3.jpg" alt="参考画像" width="250px" heigth="200px">
+      </div>
+      <div class="bottom"><b>
+        <p>0円 → 交渉により早期に<span>85万円</span>を回収！</p>
+      </div></b>
+      <div id="case3js">
+        <p></p>
+      </div>
+    </div>
+    <div class="case3des"> 
+      das
+    </div>
+    <div class="CASE4 clearfix">
+      <div class="left clearfix">
+        <div class="left-left">
+          <div class="addcase">
+            <i>CASE4</i>
+          </div>
+          <p><b>
+            年俸制における固定残業代の明<br>
+            確区分性が問題になった事例に<br>
+            ついて
+          </p></b> 
+        </div>
+        <div class="left-right">
+          <img src="case-sec-ic4.png" alt="参考画像" width="100px" heigth="150px">
+        </div>
+      </div>
+      <div class="right">
+        <img src="case-sec-pic4.jpg" alt="参考画像" width="250px" heigth="200px">
+      </div>
+      <div class="bottom"><b>
+        0円 → 早期に示談金<span>195万円</span>を回収！
+      </div></b>
+      <div id="case4js">
+        <p></p>
+      </div>
+    </div>
+    <div class="case4des"> 
+      das
+    </div>
+    <div class="CASE5 clearfix">
+      <div class="left clearfix">
+        <div class="left-left">
+          <div class="addcase">
+            <i>CASE5</i>
+          </div>
+          <p><b>
+            現場作業員の固定残業代制の有<br>
+            効性、管理監督者性が問題とな<br>
+            った事例について
+          </p></b>
+        </div>
+        <div class="left-right">
+          <img src="case-sec-ic5.png" alt="参考画像" width="100px" heigth="150px">
+        </div>
+      </div>
+      <div class="right">
+        <img src="case-sec-pic5.jpg" alt="参考画像" width="250px" heigth="200px">
+
+      </div>
+      <div class="bottom"><b>
+        約40万 → 訴訟により<span>350万円以上</span>の回収！
+      </div></b>
+      <div id="case5js">
+        <p></p>
+      </div>
+    </div>
+    <div class="case5des"> 
+      das
+    </div>
+    
+  </section>
+
+  <section id="sec9">
+    <div class="sec9header">
+    </div>
+    <div class="sec9mainupper">
+      <div id="sec9mainupperleft">
+        <p>弁護士費用は？</p>
+        <p id="sec9mainupperleftfont"><b>
+          回収できなければ報酬なしの、<br>
+          <span id="sec9mainupperleftfontcolor">完全成功報酬制</span>！
+        </p></b>
+      </div>
+      <div class="sec9headerupperright">
+        <img src="sec9-pic1-sm.jpg" alt="参考画像" width="400px" height="350px">
+      </div>
+    </div>
+    <div class="sec9mainunder">
+      <div id="sec9mainunderleft">
+        <div id="sec9mainunderleftbox">
+          <p class="sec9titlefont1">弁護士費用 (税別)</p>
+          <img src="sec9-img1.png" alt="参考画像" width="380px" height="80px" class="sec9titelfontsize">
+          <p class="sec9titelfontsize"><b>サリュの弁護士費用は完全成功報酬制</p></b>
+          <p class="sec9titelfontsize">実際に回収した残業代の中から報酬をいただきますので、回収できなければ報酬は発生しません。</p>
+        </div>
+      </div>
+      <div id="sec9mainunderright">
+        <div id="sec9mainunderrightbox">
+          <p class="sec9titlefont2">初期費用</p>
+          <img src="sec9-img3.png" alt="参考画像" width="380px" height="80px" class="sec9titelfontsize">
+          <p class="sec9titelfontsize">
+            ご依頼時に費用がかかりませんので、<br>
+            安心してご相談ください。
+          </p>
+        </div>
+        <p id="sec9mainunderrightfont">
+          ※会社側の支払の資力がない場合または残業の証拠が全くない場合等事案によって別の料金体系とすることがあります。<br>
+
+          ※労働審判については５％。裁判については、10％の追加報酬が発生します。<br>
+
+          ※労働審判または裁判をする場合には、一回の裁判の期日ごとに2万円（税別）の事務手数料が発生します。<br>
+
+          ※民事保全、強制執行については別途費用が発生します。<br>
+
+          ※上記の他、別途実費が発生します。<br>
+        </p>
+      </div>
+    </div>
+  </section>
+</body>
+</html>
