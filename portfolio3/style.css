@@ -1,0 +1,134 @@
+/* リセットcss */
+*{
+  margin: 0;
+  padding: 0;
+}
+
+/* ヘッダー */
+#header{
+  display: flex; 
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 auto;
+  max-width: 960px;
+}
+
+#headerprofile{
+  margin:10px 0px 10px 50px;
+  width: 100px;
+  height: 50px;
+  background-color: black;
+  color: white;
+  text-align: center;
+  line-height: 50px;
+}
+
+#header ul{
+  display: flex;
+  list-style: none;
+  padding: 10px 0;
+}
+
+#header li{
+  margin-left: 30px;
+}
+
+#header li a:hover {
+  opacity: 0.7;
+}
+
+/* メイン */
+main{
+  margin-bottom: 80px;
+}
+
+/* メインの自転車の写真 */
+#topimage{
+  margin-bottom: 80px;
+}
+
+#topimage img{
+  width: 100%;
+  max-width: 1920px;
+  height: 600px;
+}
+
+/* メインのabout */
+#about{
+  margin-bottom: 80px;
+}
+
+#about h2{
+  width: 100px;
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 60px;
+  border-bottom: solid 1px;
+}
+
+#profilebox{
+  display: flex;
+  justify-content: center;
+  max-width: 960px;
+  margin: 0 auto;
+}
+
+#profileimage{
+  width: 100px;
+  height: 100px;
+  margin: 25px 25px 0px 0px;
+  border-radius: 50%;
+  float: left;
+}
+
+#myname{
+  height: 20px;
+  margin-top: 25px;
+  margin-bottom: 10px;
+}
+
+/* 自転車 */
+#bicycle h2{
+  text-align: center;
+  margin-bottom: 60px;
+}
+
+#bicycleimage{
+  display: flex; 
+  justify-content: center;
+}
+
+#bicycle1{
+  text-align: center;
+}
+
+#bicycleimage1{
+  width: 300px;
+  height: 200px;
+}
+
+#bicycle2{
+  margin-right: 30px;
+  margin-left: 30px;
+  text-align: center;
+}
+
+#bicycleimage2{
+  width: 300px;
+  height: 200px;
+}
+
+#bicycle3{
+  text-align: center;
+}
+
+#bicycleimage3{
+  width: 300px;
+  height: 200px;
+}
+
+/* フッダー */
+#footertext{
+  height: 200px;
+  text-align: center;
+}
