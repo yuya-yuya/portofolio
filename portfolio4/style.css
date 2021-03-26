@@ -1,0 +1,71 @@
+/* リセットcss */
+*{
+  padding: 0;
+  margin: 0;
+}
+
+.clearfix::after { 
+  content: '';
+  display: block; 
+  clear: both;
+}
+
+/* ヘッダー */
+#header{
+  width: 800px;
+  margin: 0 auto;
+  padding: 80px 0px;
+  display: flex;
+  justify-content: space-between;
+}
+
+#header ul{
+  list-style: none;
+  display: flex;
+}
+
+/* メイン */
+/* メインビジュアル */
+#mainvisual img{
+  width: 100%;
+  height: 400px;
+  margin-bottom: 60px;
+}
+
+/* アバウト */
+#about h2{
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+#aboutdescription{
+  width: 800px;
+  margin: 0 auto;
+}
+
+#aboutdescription p{
+  padding: 20px 0px;
+} 
+
+/* ワークス */
+#worksbox{
+  width: 800px;
+  height: 400px;
+  margin: 0 auto;
+}
+
+#works ul{
+  display: flex;
+  justify-content: center;
+}
+
+#works li{
+  list-style: none;
+}
+
+#works img{
+  width: 200px;
+  height: 100px;
+  margin: 0px 20px;
+  list-style: none;
+}
