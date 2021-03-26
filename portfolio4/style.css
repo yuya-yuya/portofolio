@@ -12,7 +12,7 @@
 
 /* ヘッダー */
 #header{
-  width: 800px;
+  width: 900px;
   margin: 0 auto;
   padding: 80px 0px;
   display: flex;
@@ -22,6 +22,10 @@
 #header ul{
   list-style: none;
   display: flex;
+}
+
+#header li{
+  padding: 0 10px;
 }
 
 /* メイン */
@@ -39,7 +43,7 @@
 }
 
 #aboutdescription{
-  width: 800px;
+  width: 900px;
   margin: 0 auto;
 }
 
@@ -49,7 +53,7 @@
 
 /* ワークス */
 #worksbox{
-  width: 800px;
+  width: 900px;
   height: 400px;
   margin: 0 auto;
 }
@@ -69,3 +73,26 @@
   margin: 0px 20px;
   list-style: none;
 }
+
+/* ニュース */
+#news{
+  width: 900px;
+  margin: 0 auto;
+}
+
+#news dl{
+  display: flex;
+  flex-wrap: wrap;
+}
+
+#news dt{
+  width: 20%;
+  padding: 5px 0px;
+}
+
+#news dd{
+  width: 80%;
+  padding: 5px 0px;
+}
+
+/* コンタクト */
