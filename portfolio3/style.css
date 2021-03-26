@@ -27,6 +27,7 @@
   display: flex;
   list-style: none;
   padding: 10px 0;
+  margin-right: 20px;
 }
 
 #header li{
@@ -56,11 +57,11 @@ main{
 /* メインのabout */
 #about{
   margin-bottom: 80px;
+  text-align: center;
 }
 
 #about h2{
-  width: 100px;
-  text-align: center;
+  display: inline-block;
   font-size: 2rem;
   margin-bottom: 60px;
   border-bottom: solid 1px;
@@ -85,12 +86,21 @@ main{
   height: 20px;
   margin-top: 25px;
   margin-bottom: 10px;
+  text-align: left;
 }
 
 /* 自転車 */
+#bicycle{
+  text-align: center;
+}
+
 #bicycle h2{
   text-align: center;
+  display: inline-block;
   margin-bottom: 60px;
+  font-size: 2rem;
+  margin-bottom: 60px;
+  border-bottom: solid 1px;
 }
 
 #bicycleimage{
@@ -131,4 +141,31 @@ main{
 #footertext{
   height: 200px;
   text-align: center;
+}
+
+@media screen and (max-width: 600px) {
+  #header{
+    max-width: 600px;
+  }
+
+  #topimage img{
+    height: 200px;
+  }
+
+  #profilebox{
+    flex-direction: column;
+  }
+
+  #profileimage{
+    margin: 0 auto;
+  }
+
+  #myname{
+    text-align: center;
+  }
+
+  #bicycleimage{
+    flex-direction: column;
+  }
+
 }
