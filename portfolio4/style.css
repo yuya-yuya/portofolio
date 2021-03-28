@@ -2,6 +2,7 @@
 *{
   padding: 0;
   margin: 0;
+  font-weight: normal;
 }
 
 .clearfix::after { 
@@ -37,9 +38,14 @@
 }
 
 /* アバウト */
+#about{
+  width: 900px;
+  margin: 0 auto 100px;
+}
+
 #about h2{
+  margin-bottom: 50px;
   text-align: center;
-  margin-bottom: 40px;
 }
 
 #aboutdescription{
@@ -52,15 +58,24 @@
 } 
 
 /* ワークス */
-#worksbox{
+#works{
+  text-align: center;
   width: 900px;
-  height: 400px;
-  margin: 0 auto;
+  margin: 0 auto 100px;
+}
+
+#works h2{
+  margin-bottom: 50px;
 }
 
 #works ul{
+  width: 900px;
+  height: 400px;
+  margin: 0 auto;
+  padding: 0;
   display: flex;
-  justify-content: center;
+  flex-wrap: wrap;
+  justify-content: space-between;
 }
 
 #works li{
@@ -68,16 +83,19 @@
 }
 
 #works img{
-  width: 200px;
-  height: 100px;
   margin: 0px 20px;
   list-style: none;
 }
 
 /* ニュース */
 #news{
+  text-align: center;
   width: 900px;
-  margin: 0 auto;
+  margin: 0 auto 100px;
+}
+
+#news h2{
+  margin-bottom: 50px;
 }
 
 #news dl{
@@ -88,11 +106,57 @@
 #news dt{
   width: 20%;
   padding: 5px 0px;
+  text-align: left;
 }
 
 #news dd{
   width: 80%;
   padding: 5px 0px;
+  text-align: left;
 }
 
 /* コンタクト */
+#contact{
+  text-align: center;
+  width: 900px;
+  margin: 0 auto;
+}
+
+#contact h2{
+  margin-bottom: 50px;
+}
+
+#massagebox{
+  width: 800px;
+  margin: 0 auto;
+}
+
+#contact dt{
+  width: 20%;
+}
+
+#contact dd{
+  width: 80%;
+  height: 40px;
+}
+
+#contact button{
+  text-align: center;
+  width: 200px;
+  height: 50px;
+  background-color: black;
+  color: white;
+}
+
+#contact button :hover{
+  opacity: 0.5;
+}
+
+/* フッター */
+footer{
+  margin-top: 100px;
+  text-align: center;
+  color: white;
+  background-color: black;
+  color: white;
+}

@@ -22,7 +22,7 @@
     <div id="mainvisual">
       <img src="mainvisual.png" alt="メインビジュアル">
     </div>
-    <div id="about">
+    <section id="about">
       <h2>About</h2>
       <div id="aboutdescription">
         <p>Xxxxx Ashley</p>
@@ -33,22 +33,24 @@
           mail: xxx@xxxxxx.jp
         </p>
         <p>
-          プロフィールテキストテキストテキストテキストテキストテキストテキストテキストテキストスト<br>
-          テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト<br> 
+          プロフィールテキストテキストテキストテキストテキストテキストテキストテキストテキストスト
+          テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト
           テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト
         </p>
       </div>
-    </div>
-    <div id="works">
+    </section>
+    <section id="works">
       <h2>Works</h2>
-      <img src="works1.png" alt="work1">
-      <img src="works2.png" alt="work2">
-      <img src="works3.png" alt="work3">
-      <img src="works4.png" alt="work4">
-      <img src="works5.png" alt="work5">
-      <img src="works6.png" alt="work6">
-    </div>
-    <div id="news">
+      <ul>
+        <li><img src="works1.png" alt="work1" width="250" height="150"></li>
+        <li><img src="works2.png" alt="work2" width="250" height="150"></li>
+        <li><img src="works3.png" alt="work3" width="250" height="150"></li>
+        <li><img src="works4.png" alt="work4" width="250" height="150"></li>
+        <li><img src="works5.png" alt="work5" width="250" height="150"></li>
+        <li><img src="works6.png" alt="work6" width="250" height="150"></li>
+      </ul>
+    </section>
+    <section id="news">
       <h2>News</h2>
       <dl>
         <dt>2020.XX.XX</dt>
@@ -63,8 +65,42 @@
         <dd>【個展開催のお知らせ】テキストテキストテキストテキストテキストテキストテキスト
         </dd>
       </dl>
-    </div>
+    </section>
+    <sedtion id="contact">
+      <h2>Contact</h2>
+      <dl id="massagebox">
+        <div class="name">
+          <dt>
+            <label for="name">NAME</label>
+          </dt>
+          <dd>
+            <input id="name" type="text" name="name">
+          </dd>
+        </div>
+        <div class="mail">
+          <dt>
+            <label for="mail">E-mail</label>
+          </dt>
+          <dd>
+            <input id="mail" type="mail" name="mail">
+          </dd>
+       </div>
+       <div class="massage">
+          <dt>
+            <label for="massage">MESSAGE</label>
+          </dt>
+          <dd>
+            <input id="message" type="text" name="massage">
+          </dd>
+       </div>
+        <div class="button">
+          <button type="button">送信</button>
+        </div>
+      </dl>
+    </sedtion>
   </main>
-  <footer></footer>
+  <footer>
+    <small>© 2020 My Work</small>
+  </footer>
 </body>
 </html>
