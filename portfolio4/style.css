@@ -78,9 +78,12 @@ a:hover{
 }
 
 #works ul{
-  height: 1100px;
+  height: 400px;
   margin: 0 auto;
   padding: 0;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
 }
 
 #works li{
@@ -215,7 +218,7 @@ footer{
 
 #works ul{
   display: block;
-  
+  height: 1100px;
 }
 
 #works img{
