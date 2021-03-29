@@ -9,13 +9,13 @@
 </head>
 <body>
   <header id="header">
-    <h1>My Work</h1>
+    <a href="#"><h1>My Work</h1></a>
     <ul>
-      <li>About</li>
-      <li>Works</li>
-      <li>News</li>
-      <li>Contact</li>
-      <li><i class="fas fa-camera-retro"></i></li>
+      <a href="#"><li>About</li></a>
+      <a href="#"><li>Works</li></a>
+      <a href="#"><li>News</li></a>
+      <a href="#"><li>Contact</li></a>
+      <a href="#"><li><i class="fas fa-camera-retro"></i></li></a>
     </ul>
   </header>
   <main>
@@ -69,7 +69,7 @@
     <sedtion id="contact">
       <h2>Contact</h2>
       <dl id="massagebox">
-        <div class="name">
+        <div class="control">
           <dt>
             <label for="name">NAME</label>
           </dt>
@@ -77,7 +77,7 @@
             <input id="name" type="text" name="name">
           </dd>
         </div>
-        <div class="mail">
+        <div class="control">
           <dt>
             <label for="mail">E-mail</label>
           </dt>
@@ -85,18 +85,18 @@
             <input id="mail" type="mail" name="mail">
           </dd>
        </div>
-       <div class="massage">
+       <div class="control">
           <dt>
             <label for="massage">MESSAGE</label>
           </dt>
           <dd>
-            <input id="message" type="text" name="massage">
+            <textarea id="message" type="textarea" name="massage"></textarea>
           </dd>
        </div>
+      </dl>
         <div class="button">
           <button type="button">送信</button>
         </div>
-      </dl>
     </sedtion>
   </main>
   <footer>
