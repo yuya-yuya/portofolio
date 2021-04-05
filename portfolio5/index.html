@@ -1,34 +1,148 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ja">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
-  
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
-  <link rel="stylesheet" href="style.css">
+
+  <!-- Latest compiled and minified CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+  <!-- Optional theme -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+
+<link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-  <header>
-    <img src="img/photo1.png" alt="visualimage" width="100%">
-  </header>
-  <main>
-    <section id="toptitle">
-      <h3>A special, long article in a newspaper or magazine</h3>
-      <div>
-        <p>
-          テキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト<br>
-          テキストテキストテキストテキストテキストテキストテキストテキスト
-        </p>
+  <div class="container">
+    <header>
+      <h2>TOTALLY</h2>
+      <div class="row">
+        <ul class="list-inline col-md-6">
+          <li>ALL</li>
+          <li>NEW</li>
+          <li>VINTAGE</li>
+          <li>CATEGORY</li>
+          <li>LOOKBOOK</li>
+          <li>BLOG</li>
+        </ul>
+        <ul class="list-inline col-md-6 ul2">
+          <li>LOGIN</li>
+          <li>CONTACT</li>
+        </ul>
       </div>
-    </section>
-    <section id="topicimage"> 
-      <img src="img/photo2.png" alt="topicimage1" width="49%">
-      <img src="img/photo3.png" alt="topicimage2" width="49%">
-    </section>
-    <section>
-      
-    </section>
-  </main>
+    </header>
+  </div>
+    <hr>
+    <div class="container">
+      <main class="row">
+        <section class="col-md-6">
+          <img src="img/img01.png">
+        </section>
+        <section class="col-md-6 description">
+          <h3>TOTALLY Short Sleeve Shirt</h3>
+          <div>
+            <p>
+              テキストテキストテキストテキストテキストテキストテキスト テキストテキストテキストテキストテキストテキストテキスト テキストテキストテキストテキストテキストテキストテキスト テキストテキストテキストテキストテキストテキストテキスト テキストテキストテキストテキストテキストテキストテキスト テキストテキストテキスト
+            </p>
+            <p>￥9,999 +tax</p>
+          </div>
+          <div id="pricetable">
+            <table class="table table-bordered">
+              <thead>
+                <tr>
+                  <th>Color</th>
+                  <th>Size</th>
+                  <th></th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>White</td>
+                  <td>S</td>
+                  <td>
+                    <select>
+                      <option>1</option>
+                      <option>2</option>
+                      <option>3</option>
+                    </select>
+                  </td>
+                </tr>
+                <tr>
+                  <td>White</td>
+                  <td>M</td>
+                  <td>
+                    <select>
+                      <option>1</option>
+                      <option>2</option>
+                      <option>3</option>
+                    </select>
+                  </td>
+                </tr>
+                <tr>
+                  <td>White</td>
+                  <td>L</td>
+                  <td>
+                    <select>
+                      <option>1</option>
+                      <option>2</option>
+                      <option>3</option>
+                    </select>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+            <button class="btn btn-primary"></button>
+          </div>
+          <table class="table table-bordered">
+            <thead>
+              <tr>
+                <th>Color</th>
+                <th>Size</th>
+                <th></th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>White</td>
+                <td>S</td>
+                <td>
+                  <select>
+                    <option>1</option>
+                    <option>2</option>
+                    <option>3</option>
+                  </select>
+                </td>
+              </tr>
+              <tr>
+                <td>White</td>
+                <td>M</td>
+                <td>
+                  <select>
+                    <option>1</option>
+                    <option>2</option>
+                    <option>3</option>
+                  </select>
+                </td>
+              </tr>
+              <tr>
+                <td>White</td>
+                <td>L</td>
+                <td>
+                  <select>
+                    <option>1</option>
+                    <option>2</option>
+                    <option>3</option>
+                  </select>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </section>
+      </main>
+    </div>
+    <footer>
+      <small><p class="text-center">&copy;TOTALLY</p></small>
+    </footer>
 </body>
 </html>

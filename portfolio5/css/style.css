@@ -1,0 +1,50 @@
+.container{
+  width: 60%;
+}
+
+hr{
+  width: 80%;
+}
+
+header h2{
+  text-align: center;
+  font-size: 24px;
+  margin-top: 20px;
+}
+
+header div{
+  width: 80%;
+  margin: 0 auto;
+}
+
+header .ul2{
+  text-align: right;
+}
+
+main img{
+  width: 100%;
+  padding: 30px;
+}
+
+/* メインの右側 */
+.description{
+  font-size: 12px;
+  padding: 30px;
+}
+
+.description h3{
+  font-size: 18px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+
+#pricetable button{
+  width: 100%;
+  height: 50px;
+  color: #fff;
+}
+
+/* フッダー */
+footer{
+  margin-top: 60px;
+}
