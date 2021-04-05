@@ -18,15 +18,15 @@
     <header>
       <h2>TOTALLY</h2>
       <div class="row">
-        <ul class="list-inline col-md-6">
-          <li>ALL</li>
-          <li>NEW</li>
-          <li>VINTAGE</li>
-          <li>CATEGORY</li>
-          <li>LOOKBOOK</li>
-          <li>BLOG</li>
+        <ul class="nav col-md-6">
+          <li class="nav-item">ALL</li>
+          <li class="nav-item">NEW</li>
+          <li class="nav-item">VINTAGE</li>
+          <li class="nav-item">CATEGORY</li>
+          <li class="nav-item">LOOKBOOK</li>
+          <li class="nav-item">BLOG</li>
         </ul>
-        <ul class="list-inline col-md-6 ul2">
+        <ul class="list-inline col-md-6 mr-auto ul2">
           <li>LOGIN</li>
           <li>CONTACT</li>
         </ul>
@@ -46,14 +46,15 @@
               テキストテキストテキストテキストテキストテキストテキスト テキストテキストテキストテキストテキストテキストテキスト テキストテキストテキストテキストテキストテキストテキスト テキストテキストテキストテキストテキストテキストテキスト テキストテキストテキストテキストテキストテキストテキスト テキストテキストテキスト
             </p>
             <p>￥9,999 +tax</p>
+            <p id="date" class="text-right"></p>
           </div>
           <div id="pricetable">
-            <table class="table table-bordered">
+            <table class="table table-bordered table-striped table1">
               <thead>
                 <tr>
-                  <th>Color</th>
-                  <th>Size</th>
-                  <th></th>
+                  <th class="col-md-3">Color</th>
+                  <th class="col-md-3">Size</th>
+                  <th class="col-md-6"></th>
                 </tr>
               </thead>
               <tbody>
@@ -92,57 +93,49 @@
                 </tr>
               </tbody>
             </table>
-            <button class="btn btn-primary"></button>
+            <button type="button" class="btn">ADD TO CART</button>
+            <table class="table table-bordered table-striped table2">
+              <thead>
+                <tr>
+                  <th>Size</th>
+                  <th>Chest</th>
+                  <th>Weist</th>
+                  <th>Height</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>S</td>
+                  <td>99 ～ 99</td>
+                  <td>99 ～ 99</td>
+                  <td>99 ～ 99</td>
+                </tr>
+                <tr>
+                  <td>M</td>
+                  <td>99 ～ 99</td>
+                  <td>99 ～ 99</td>
+                  <td>99 ～ 99</td>
+                </tr>
+                <tr>
+                  <td>L</td>
+                  <td>99 ～ 99</td>
+                  <td>99 ～ 99</td>
+                  <td>99 ～ 99</td>
+                </tr>
+              </tbody>
+            </table>
           </div>
-          <table class="table table-bordered">
-            <thead>
-              <tr>
-                <th>Color</th>
-                <th>Size</th>
-                <th></th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr>
-                <td>White</td>
-                <td>S</td>
-                <td>
-                  <select>
-                    <option>1</option>
-                    <option>2</option>
-                    <option>3</option>
-                  </select>
-                </td>
-              </tr>
-              <tr>
-                <td>White</td>
-                <td>M</td>
-                <td>
-                  <select>
-                    <option>1</option>
-                    <option>2</option>
-                    <option>3</option>
-                  </select>
-                </td>
-              </tr>
-              <tr>
-                <td>White</td>
-                <td>L</td>
-                <td>
-                  <select>
-                    <option>1</option>
-                    <option>2</option>
-                    <option>3</option>
-                  </select>
-                </td>
-              </tr>
-            </tbody>
-          </table>
         </section>
       </main>
     </div>
     <footer>
       <small><p class="text-center">&copy;TOTALLY</p></small>
     </footer>
+    <script>
+      var today = new Date;
+      var todayhtml = (today.getMonth() + 1) + '/' + today.getDate();
+      
+      document.getElementById("date").innerHTML = todayhtml + "時点";
+    </script>
 </body>
 </html>
