@@ -1,0 +1,114 @@
+@charset "UTF-8";
+
+/* ヘッダー 開始 */
+header{
+  position: fixed;
+  top: 0;
+  z-index: 100;
+  background-color: #fff;
+}
+
+header ul{
+  background-color: #000;
+  color: #fff;
+  display: flex;
+}
+
+header li{
+  margin-right: 30px;
+  list-style: none;
+}
+/* ヘッダー  終了 */
+
+/* メイン 開始 */
+/* ピックアップ写真 開始 */
+#pickup_pictures ul{
+  display: flex;
+}
+
+#pickup_pictures img{
+  width: 374px;
+  height: 210px;
+}
+/* ピックアップ写真 終了 */
+
+/* メイン全体 開始 */
+#main_topic{
+  display: flex;
+}
+/* メイン全体 終了 */
+
+/* メイン記事 開始 */
+article{
+  width: 759px;
+}
+article img{
+  width: 759px;
+  height: 427px;
+}
+/* メイン記事 終了 */
+
+/* サイドバー 開始 */
+aside{
+  width: 345px;
+}
+
+#author_pic img{
+  width: 130px;
+  height: 130px;
+  border-radius: 50%;
+}
+
+#ranking li{
+  list-style: none;
+}
+
+#ranking img{
+  width: 345px;
+  height: 194px;
+}
+/* サイドバー 終了 */
+
+/* メイン情報 開始 */
+#main_info{
+  height: 530px;
+  background-color: #f7f7f7;
+  display: flex;
+  justify-content: space-between;
+}
+
+#main_info_about{
+  width: 350px;
+}
+
+#main_info_menu{
+  width: 350px;
+}
+
+#main_info_twitter{
+  width: 350px;
+}
+/* メイン情報 終了 */
+/* メイン終了 */
+
+/* フッダー 開始 */
+footer{
+  text-align: center;
+  background-color: #f7f7f7;
+}
+/* フッダー終了 */
+
+
+
+
+
+
+/*-------------------------------------------
+SP
+-------------------------------------------*/
+@media screen and (max-width: 767px) {
+  #header .site-title {
+    /* 表示テスト用のスタイル */
+    background-color: blue;
+  }
+}
