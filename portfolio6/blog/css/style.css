@@ -1,34 +1,65 @@
 @charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100&display=swap');
+
+*{
+  font-size: 14px;
+  font-family: 'Noto Sans', sans-serif;
+  font-family: 'Noto Sans JP', sans-serif;
+}
+
+body{
+  max-width: 1600px;
+}
 
 /* ヘッダー 開始 */
 header{
+  max-width: 1600px;
   position: fixed;
   top: 0;
   z-index: 100;
   background-color: #fff;
-  width: 100%;
+}
+
+header h1 {
+  width: 1200px;
+  padding: 20px 0;
+  margin: 0 auto;
+  font-size: 2em;
+  font-weight: bold;
+}
+
+header .wrap{
+  width: 1600px;
+  background-color: #000;
+  color: #fff;
 }
 
 header ul{
-  background-color: #000;
-  color: #fff;
+  width: 1200px;
+  margin: 0 auto;
   display: flex;
 }
 
 header li{
-  margin-right: 30px;
+  margin: 10px 40px 10px 0;
   list-style: none;
+  font-weight: bold;
 }
 /* ヘッダー  終了 */
 
 /* メイン 開始 */
-body{
+main{
+  margin: 160px 0 0 0;
   max-width: 1600px;
 }
 /* ピックアップ写真 開始 */
 #pickup_pictures{
   width: 1200px;
   margin: 0 auto 100px;
+}
+
+#pickup_pictures li p:nth-child(2){
+  font-weight: bold;
 }
 
 #pickup_pictures ul{
@@ -49,6 +80,7 @@ body{
 #pickup_pictures p{
   width: 95%;
   padding: 10px;
+  font-size: 16px;
 }
 
 #pickup_pictures img{
@@ -64,11 +96,39 @@ body{
   width: 1200px;
   margin: 0 auto 200px;
 }
+
+#mainpic1 p:nth-child(4){
+  width: 90%;
+  display: block;
+  margin: 0 auto;
+  padding: 10px 0 30px 0;
+  font-size: 16px;
+}
+
+#mainpic2 p:nth-child(4){
+  width: 90%;
+  display: block;
+  margin: 0 auto;
+  padding: 20px 0 30px 0;
+  font-size: 16px;
+}
+
+#mainpic3 p:nth-child(4){
+  width: 90%;
+  display: block;
+  margin: 0 auto;
+  padding: 10px 0 30px 0;
+  font-size: 16px;
+}
 /* メイン全体 終了 */
 
 /* メイン記事 開始 */
 article{
   width: 759px;
+}
+
+article h2{
+  font-size: 24px;
 }
 
 article div{
@@ -118,6 +178,7 @@ aside{
 #author_pic h3{
   text-align: center;
   margin: 30px 0;
+  font-size: 18px;
 }
 
 #author_pic p{
@@ -132,6 +193,7 @@ aside{
 #ranking h3{
   text-align: center;
   margin: 50px 0;
+  font-size: 18px;
 }
 
 #ranking img{
@@ -142,6 +204,7 @@ aside{
 #archive h3{
   text-align: center;
   margin: 60px 0 30px 0;
+  font-size: 18px;
 }
 
 #archive p:first-of-type{
@@ -174,6 +237,7 @@ aside{
 
 #main_info_about h3{
   margin: 0 0 30px 0;
+  font-size: 18px;
 }
 
 #main_info_about p:first-of-type{
@@ -190,6 +254,7 @@ aside{
 
 #main_info_menu h3{
   margin: 0 0 30px 0;
+  font-size: 18px;
 }
 #main_info_menu p:first-of-type{
   border-top: 1px solid #000;
@@ -197,11 +262,16 @@ aside{
 
 #main_info_menu p{
   border-bottom: 1px solid #000;
-  padding: 10px;
+  padding: 15px;
 }
 
 #main_info_twitter{
   width: 350px;
+}
+
+#main_info_twitter h3{
+  margin: 0 0 30px 0;
+  font-size: 18px;
 }
 /* メイン情報 終了 */
 /* メイン終了 */
@@ -221,6 +291,104 @@ footer{
 /*-------------------------------------------
 SP
 -------------------------------------------*/
+@media screen and (max-width: 375px){
+  body{
+    max-width: 375px;
+  }
+
+  /* ヘッダー 開始 */
+  header{
+    max-width: 375px;
+  }
+
+  header h1 {
+    width: 375px;
+  }
+
+  header .wrap{
+    width: 375px;
+  }
+
+  header ul{
+    width: 375px;
+  }
+  /* ヘッダー  終了 */
+
+  /* メイン開始 */
+  main{
+    margin: 160px 0 0 0;
+    max-width: 375px;
+  }
+
+  /* ピックアップ写真開始 */
+  #pickup_pictures{
+    width: 375px;
+    display: block;
+    margin: 0 auto 100px;
+  }
+
+  #pickup_pictures img{
+    width: 343px;
+    height: 192px;
+    display: block;
+    margin: 0 auto;
+  }
+
+  #pickup_pictures ul{
+    display: block;
+  }
+
+  /* ピックアップ写真 終了 */
+
+  /* メイン全体 開始 */
+  #main_topic{
+    display: block;
+    width: 375px;
+  }
+
+  #mainpic1 p:nth-child(4){
+    width: 90%;
+    display: block;
+    margin: 0 auto;
+    padding: 10px 0 30px 0;
+    font-size: 16px;
+  }
+
+  #mainpic2 p:nth-child(4){
+    width: 90%;
+    display: block;
+    margin: 0 auto;
+    padding: 20px 0 30px 0;
+    font-size: 16px;
+  }
+
+  #mainpic3 p:nth-child(4){
+    width: 90%;
+    display: block;
+    margin: 0 auto;
+    padding: 10px 0 30px 0;
+    font-size: 16px;
+  }
+  /* メイン全体 終了 */
+  
+  /* メイン記事 開始 */
+  article{
+    width: 375px;
+  }
+
+  article img{
+    width:343px;
+    height: 192px;
+    display: block;
+    margin: 0 auto;
+  }
+  /* メイン記事 終了 */
+
+  #wrap{
+    display: block;
+  }
+}
+
 @media screen and (max-width: 767px) {
   #header .site-title {
     /* 表示テスト用のスタイル */
