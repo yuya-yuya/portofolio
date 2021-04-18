@@ -3,7 +3,6 @@
 
 *{
   font-size: 14px;
-  font-family: 'Noto Sans', sans-serif;
   font-family: 'Noto Sans JP', sans-serif;
 }
 
@@ -21,7 +20,7 @@ header{
 }
 
 header h1 {
-  width: 1200px;
+  width: 80%;
   padding: 20px 0;
   margin: 0 auto;
   font-size: 2em;
@@ -29,13 +28,13 @@ header h1 {
 }
 
 header .wrap{
-  width: 1600px;
+  max-width: 1600px;
   background-color: #000;
   color: #fff;
 }
 
 header ul{
-  width: 1200px;
+  max-width: 1200px;
   margin: 0 auto;
   display: flex;
 }
@@ -54,8 +53,12 @@ main{
 }
 /* ピックアップ写真 開始 */
 #pickup_pictures{
-  width: 1200px;
+  max-width: 1200px;
   margin: 0 auto 100px;
+}
+
+#pickup_pictures li{
+  width: 32%;
 }
 
 #pickup_pictures li p:nth-child(2){
@@ -81,11 +84,11 @@ main{
   width: 95%;
   padding: 10px;
   font-size: 16px;
+  font-family: 'Noto Sans', sans-serif;
 }
 
 #pickup_pictures img{
-  width: 374px;
-  height: 210px;
+  width: 100%;
 }
 /* ピックアップ写真 終了 */
 
@@ -93,8 +96,36 @@ main{
 #main_topic{
   display: flex;
   justify-content: space-between;
-  width: 1200px;
+  max-width: 1200px;
   margin: 0 auto 200px;
+}
+/* メイン全体 終了 */
+
+/* メイン記事 開始 */
+article{
+  width: 65%;
+}
+
+article h2{
+  font-size: 24px;
+  font-family: 'Noto Sans', sans-serif;
+}
+
+article div{
+  margin: 0 0 70px 0;
+}
+
+article img{
+  width: 100%;
+}
+
+article a{
+  color: #000;
+  text-align: center;
+}
+
+article a:hover{
+  text-decoration: none;
 }
 
 #mainpic1 p:nth-child(4){
@@ -120,34 +151,6 @@ main{
   padding: 10px 0 30px 0;
   font-size: 16px;
 }
-/* メイン全体 終了 */
-
-/* メイン記事 開始 */
-article{
-  width: 759px;
-}
-
-article h2{
-  font-size: 24px;
-}
-
-article div{
-  margin: 0 0 70px 0;
-}
-
-article img{
-  width: 759px;
-  height: 427px;
-}
-
-article a{
-  color: #000;
-  text-align: center;
-}
-
-article a:hover{
-  text-decoration: none;
-}
 
 #mainpic1 p:first-of-type{
   padding:10px 0;
@@ -164,7 +167,8 @@ article a:hover{
 
 /* サイドバー 開始 */
 aside{
-  width: 345px;
+  width: 33%;
+  padding: 20px;
 }
 
 #author_pic img{
@@ -179,6 +183,7 @@ aside{
   text-align: center;
   margin: 30px 0;
   font-size: 18px;
+  font-family: 'Noto Sans', sans-serif;
 }
 
 #author_pic p{
@@ -194,17 +199,18 @@ aside{
   text-align: center;
   margin: 50px 0;
   font-size: 18px;
+  font-family: 'Noto Sans', sans-serif;
 }
 
 #ranking img{
-  width: 345px;
-  height: 194px;
+  width: 100%;
 }
 
 #archive h3{
   text-align: center;
   margin: 60px 0 30px 0;
   font-size: 18px;
+  font-family: 'Noto Sans', sans-serif;
 }
 
 #archive p:first-of-type{
@@ -224,20 +230,21 @@ aside{
 }
 
 #wrap{
-  width: 1200px;
+  max-width: 1200px;
   display: flex;
   justify-content: space-between;
   margin: 0 auto;
-  padding: 100px 0;
+  padding: 100px 10px 0 10px;
 }
 
 #main_info_about{
-  width: 350px;
+  width: 30%;
 }
 
 #main_info_about h3{
   margin: 0 0 30px 0;
   font-size: 18px;
+  font-family: 'Noto Sans', sans-serif;
 }
 
 #main_info_about p:first-of-type{
@@ -249,13 +256,15 @@ aside{
 }
 
 #main_info_menu{
-  width: 350px;
+  width: 30%;
 }
 
 #main_info_menu h3{
   margin: 0 0 30px 0;
   font-size: 18px;
+  font-family: 'Noto Sans', sans-serif;
 }
+
 #main_info_menu p:first-of-type{
   border-top: 1px solid #000;
 }
@@ -266,12 +275,13 @@ aside{
 }
 
 #main_info_twitter{
-  width: 350px;
+  width: 30%;
 }
 
 #main_info_twitter h3{
   margin: 0 0 30px 0;
   font-size: 18px;
+  font-family: 'Noto Sans', sans-serif;
 }
 /* メイン情報 終了 */
 /* メイン終了 */
@@ -291,59 +301,68 @@ footer{
 /*-------------------------------------------
 SP
 -------------------------------------------*/
-@media screen and (max-width: 375px){
-  body{
-    max-width: 375px;
+
+@media screen and (max-width: 767px) {
+  #header .site-title {
+    /* 表示テスト用のスタイル */
+    background-color: blue;
   }
 
-  /* ヘッダー 開始 */
-  header{
-    max-width: 375px;
-  }
-
-  header h1 {
-    width: 375px;
-  }
-
-  header .wrap{
-    width: 375px;
-  }
-
-  header ul{
-    width: 375px;
-  }
-  /* ヘッダー  終了 */
-
-  /* メイン開始 */
+  /* メイン 開始 */
   main{
-    margin: 160px 0 0 0;
-    max-width: 375px;
+    max-width: 767px;
   }
-
-  /* ピックアップ写真開始 */
+  /* ピックアップ写真 開始 */
   #pickup_pictures{
-    width: 375px;
-    display: block;
-    margin: 0 auto 100px;
+    max-width: 767px;
   }
 
-  #pickup_pictures img{
-    width: 343px;
-    height: 192px;
-    display: block;
-    margin: 0 auto;
+  #pickup_pictures li{
+    width: 100%;
   }
 
   #pickup_pictures ul{
     display: block;
   }
 
+  #pickup_pictures img{
+    padding: 10px;
+    width: 100%;
+  }
   /* ピックアップ写真 終了 */
 
   /* メイン全体 開始 */
   #main_topic{
     display: block;
-    width: 375px;
+    max-width: 767px;
+  }
+  /* メイン全体 終了 */
+
+  /* メイン記事 開始 */
+  article{
+    width: 100%;
+  }
+
+  article h2{
+    font-size: 24px;
+  }
+
+  article div{
+    margin: 0 0 70px 0;
+  }
+
+  article img{
+   width: 100%;
+   padding: 10px;
+  }
+
+  article a{
+    color: #000;
+    text-align: center;
+  }
+
+  article a:hover{
+    text-decoration: none;
   }
 
   #mainpic1 p:nth-child(4){
@@ -369,29 +388,62 @@ SP
     padding: 10px 0 30px 0;
     font-size: 16px;
   }
-  /* メイン全体 終了 */
-  
-  /* メイン記事 開始 */
-  article{
-    width: 375px;
+
+  #mainpic1 p:first-of-type{
+    padding:10px 0;
   }
 
-  article img{
-    width:343px;
-    height: 192px;
-    display: block;
-    margin: 0 auto;
+  #mainpic2 p:first-of-type{
+    padding:10px 0;
+  }
+
+  #mainpic3 p:first-of-type{
+    padding:10px 0;
   }
   /* メイン記事 終了 */
 
-  #wrap{
-    display: block;
+  /* サイドバー 開始 */
+  aside{
+    width: 100%;
   }
-}
+  /* サイドバー 終了 */
 
-@media screen and (max-width: 767px) {
-  #header .site-title {
-    /* 表示テスト用のスタイル */
-    background-color: blue;
+  /* メイン情報 開始 */
+  #main_info{
+    height: 1180px;
+    background-color: #f7f7f7;
   }
+
+  #wrap{
+    width: 100%;
+    display: block;
+    justify-content: space-between;
+    margin: 0 auto;
+    padding: 100px 0 0 0;
+  }
+
+  #main_info_about{
+    width: 100%;
+    padding: 10px;
+  }
+
+  #main_info_menu{
+    width: 100%;
+    padding: 10px;
+  }
+
+  #main_info_twitter{
+    width: 100%;
+    padding: 10px;
+  }
+
+  #main_info_twitter a{
+    width: 100%;
+  }
+
+  /* メイン情報 終了 */
+
+
+  
+
 }
